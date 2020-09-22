@@ -1,4 +1,4 @@
-##This is a template framework to show how to run test using Selenoid
+# This is a template framework to show how to run test using Selenoid
 
 
 Before running test please install Selenoid using the following commands:
