@@ -1,4 +1,4 @@
-##This is a template framework to show how to run test using Selenoid##
+##This is a template framework to show how to run test using Selenoid
 
 
 Before running test please install Selenoid using the following commands:
@@ -10,6 +10,7 @@ $ ./cm selenoid start --vnc
 
 Then check the the status of Selenoid:
 curl http://localhost:4444/status
+
 
 To run test using Selenoid, please specify the following settings
 Go http://localhost:8080/#/capabilities/ and pick the Python for instance.
@@ -27,6 +28,7 @@ See the example of settings:
         desired_capabilities=capabilities
     )
 ```
+
 There is the UI dashboard for Selenoid that can be started using the following:
 ```
 $ ./cm selenoid-ui start
@@ -35,9 +37,9 @@ $ ./cm selenoid-ui start
 Finally, it should looks like that:
 ```
 $ docker ps
-CONTAINER ID  IMAGE                        COMMAND                 CREATED     STATUS              PORTS                   NAMES
-78e1c32fe108  aerokube/selenoid-ui:1.10.0  "/selenoid-ui --sele…"  1 hour ago  Up 1 hour (healthy) 0.0.0.0:8080->8080/tcp  selenoid-ui
-1fa9d850b722  aerokube/selenoid:1.10.0     "/usr/bin/selenoid -…"  1 hour ago  Up 1 hour           0.0.0.0:4444->4444/tcp  selenoid
+CONTAINER ID  IMAGE                        COMMAND                 CREATED     STATUS     PORTS                   NAMES
+78e1c32fe108  aerokube/selenoid-ui:1.10.0  "/selenoid-ui --sele…"  1 hour ago  Up 1 hour  0.0.0.0:8080->8080/tcp  selenoid-ui
+1fa9d850b722  aerokube/selenoid:1.10.0     "/usr/bin/selenoid -…"  1 hour ago  Up 1 hour  0.0.0.0:4444->4444/tcp  selenoid
 ```
 
 Go to http://localhost:8080/ to see the Selenoid UI dashboard
