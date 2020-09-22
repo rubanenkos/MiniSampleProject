@@ -1,4 +1,4 @@
-**This is a template framework to show how to run test using Selenoid**
+##This is a template framework to show how to run test using Selenoid##
 
 
 Before running test please install Selenoid using the following commands:
@@ -15,7 +15,7 @@ To run test using Selenoid, please specify the following settings
 Go http://localhost:8080/#/capabilities/ and pick the Python for instance.
 See the example of settings:
 ```
-    *capabilities = {
+    capabilities = {
         "browserName": "firefox",
         "version": "79.0",
         "enableVNC": True,
@@ -25,9 +25,9 @@ See the example of settings:
     driver = webdriver.Remote(
         command_executor='http://localhost:4444/wd/hub',
         desired_capabilities=capabilities
-    )*
+    )
 ```
-There is a UI for Selenoid that can be started using the following:
+There is the UI dashboard for Selenoid that can be started using the following:
 ```
 $ ./cm selenoid-ui start
 ```
@@ -41,8 +41,9 @@ CONTAINER ID  IMAGE                        COMMAND                 CREATED     S
 ```
 
 Go to http://localhost:8080/ to see the Selenoid UI dashboard
+
 *Don't forget to specify "enableVNC": True for capabilities settings for having an ability to watch for the running test process*
 
 
 After starting a test (via the command line (pytest) or via IDE) please go for the Selenoid UI dashboard and click on the newly created 
-a session link to move to a certain section that displays running browser and log messages.
+session link to move to the certain section that displays the running browser and log messages.
