@@ -1,9 +1,11 @@
-This is a template framework to show how to run test using Selenoid
+**This is a template framework to show how to run test using Selenoid**
 
 Before running test please install Selenoid
 Use the following commands:
+'''
 $ curl -s https://aerokube.com/cm/bash | bash
 $ ./cm selenoid start --vnc
+'''
 (--vnc - this key is needed to connect to a browser in docker via vnc)
 
 To check the status use:
