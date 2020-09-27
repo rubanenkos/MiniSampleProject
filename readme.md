@@ -49,3 +49,5 @@ Go to http://localhost:8080/ to see the Selenoid UI dashboard
 
 After starting a test (via the command line (pytest) or via IDE) please go for the Selenoid UI dashboard and click on the newly created 
 session link to move to the certain section that displays the running browser and log messages.
+
+P/S Useful article https://4te.me/post/selenium-docker/
